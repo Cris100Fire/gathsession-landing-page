@@ -1,0 +1,27 @@
+@use "../abstracts/mixins" as m;
+@use "../abstracts/variables" as v;
+
+.hero {
+  h1 {
+    margin: 34px 0 24px;
+  }
+  p {
+    font-size: v.$secondary-size-text;
+    color: v.$primary-color;
+    width: 89%;
+    margin-bottom: 32px;
+  }
+  .hero-btns {
+    @include m.reset-list();
+    gap: 30px;
+    margin-bottom: 144px;
+    .link {
+      text-decoration: underline;
+      display: inline-flex;
+      align-items: center;
+      color: white;
+      gap: 5px;
+      font-weight: bold;
+    }
+  }
+}

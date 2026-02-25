@@ -1,0 +1,24 @@
+@use "../abstracts/mixins" as m;
+@use "../abstracts/variables" as v;
+
+.nav_list {
+  @include m.reset-list();
+  gap: 40px;
+  padding-right: 35px;
+  a {
+    &.active,
+    &:hover {
+      color: white;
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        height: 4px;
+        background-color: v.$secondary-color;
+        width: 60%;
+        bottom: -8px;
+        border-radius: 6px;
+      }
+    }
+  }
+}

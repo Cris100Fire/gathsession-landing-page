@@ -1,0 +1,43 @@
+@use "../abstracts/mixins" as m;
+@use "../abstracts/variables" as v;
+
+main {
+  display: grid;
+  grid-template-columns: 48% 52%;
+  gap: 27px;
+}
+.main-2 {
+  position: relative;
+  .elipses {
+    img {
+      position: absolute;
+      z-index: -1;
+      &:first-of-type {
+        top: 40px;
+        left: -6px;
+        width: 140%;
+      }
+      &:last-of-type {
+        top: 290px;
+        left: 197px;
+        width: 105%;
+      }
+    }
+  }
+  .imgs-card {
+    display: flex;
+    gap: 32px;
+    div {
+      &.final-img {
+        display: flex;
+        align-items: center;
+      }
+      figure:first-of-type img {
+        margin-bottom: 32px;
+      }
+      img {
+        width: 107%;
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+@use "../abstracts/mixins" as m;
+@use "../abstracts/variables" as v;
+
+.btn-1 {
+  color: white;
+  background-color: v.$secondary-color;
+  padding: 16px 54px;
+  border-radius: 16px 16px 16px 0;
+  &:hover {
+    color: v.$secondary-color;
+    background-color: white;
+  }
+}
