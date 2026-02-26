@@ -11,7 +11,7 @@ This project was developed as a frontend practice applying clean structure, scal
 
 ## 🚀 Live Demo
 
-👉 **[View Live Project](https://cris100fire.github.io/header-gathsession-landing-page/)**
+👉 **[View Live Project](https://cris100fire.github.io/gathsession-landing-page/)**
 
 ---
 
